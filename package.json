@@ -1,0 +1,19 @@
+{
+  "name": "gulp-urequire",
+  "version": "0.0.1",
+  "description": "Gulp wrapper for uRequire",
+  "main": "index.coffee",
+  "license": "MIT",
+  "author": "Kevin Malakoff (https://github.com/kmalakoff)",
+  "repository": {"type": "git", "url": "https://github.com/kmalakoff/gulp-urequire.git"},
+  "engines": {"node": ">=0.8.0"},
+  "dependencies": {
+    "coffee-script": "*",
+    "gulp-util": "*",
+    "urequire": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "gulp": "~3.2.0"
+  }
+}

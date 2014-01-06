@@ -12,9 +12,7 @@ class GulpURequire extends require('stream').Transform
 
   _flush: (callback) ->
     builder = new urequire.BundleBuilder(options)
-    builder.addFile(file) for file in @files
-
-    builder.compile (err, result) =>
+    builder.compile @files, (err, result) =>
       return callback(err) if err
 
       @push(new gutil.File({

@@ -5,15 +5,26 @@
   "main": "index.coffee",
   "license": "MIT",
   "author": "Kevin Malakoff (https://github.com/kmalakoff)",
-  "repository": {"type": "git", "url": "https://github.com/kmalakoff/gulp-urequire.git"},
-  "engines": {"node": ">=0.8.0"},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kmalakoff/gulp-urequire.git"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
   "dependencies": {
     "coffee-script": "*",
     "gulp-util": "*",
-    "urequire": "*"
+    "urequire": "*",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "mocha": "*",
     "gulp": "~3.2.0"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
